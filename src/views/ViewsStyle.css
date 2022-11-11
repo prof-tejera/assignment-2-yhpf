@@ -1,0 +1,50 @@
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+.Timers, .WorkoutList, .WorkoutTimerDisplay, .ViewTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.SaveCancel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Timer, .Item {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 10px;
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+.TimerTitle, .ItemTitle {
+
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* 2 column set up */
+/* https://www.geeksforgeeks.org/how-to-define-two-column-layout-using-flexbox/#:~:text=Approach%3A%20To%20create%20a%20two,all%20will%20come%20as%20columns. */
+
+.WorkoutView {
+    display: flex;
+    flex-direction: row;
+}
+
+.Timers, .WorkoutTimerDisplay {
+    width: 50%;
+    height: 100vh;
+    color: black;
+}
+
+.ItemsList {
+    width: 50%;
+    color: black;
+    height: 100vh;
+}

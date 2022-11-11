@@ -3,11 +3,9 @@ import Panel from "../generic/Panel";
 import DisplayTime from "../generic/DisplayTime";
 import DisplayRounds from "../generic/DisplayRounds";
 import Input from "../generic/Input";
-import Button from "../generic/Button";
-import ButtonPanel from "../generic/ButtonPanel";
 import "../generic/TimersStyle.css";
 
-const XY = () => {
+const XY = ({onAdd}) => {
     const [timeLeft, setTimeLeft] = useState(0);
     const [originalTime, setOriginalTime] = useState(0);
     const timeRef = useRef(timeLeft);
@@ -42,41 +40,9 @@ const XY = () => {
         };
     }, [isActive, isPaused, originalTime]);
 
-    // Buttons functionality 
-    const handleStart = () => {
-        setIsActive(true);
-        setIsPaused(false);
-    };
-      
-    const handlePauseResume = () => {
-        setIsPaused(!isPaused);
-    };
-
-    const handleFastForward = () => {
-        setIsActive(false);
-        setTimeLeft(0);
-        setRoundsLeft(0);
-    };
-
-    const handleReset = () => {
-        setIsActive(false);
-        setTimeLeft(originalTime);
-        setRoundsLeft(originalRounds);
-    };
-
-    // Buttons panel
-    const StartButton = (
-        <div>
-            <div>
-                <Button 
-                    className="start fa fa-play" 
-                    onClick={handleStart}
-                    text=""
-                    title="start"
-                />
-            </div>
-        </div>
-    );
+    const addTimerType = () => {
+        onAdd({ "timerType": "XY", "timerTime": timeLeft, "timerRounds": roundsLeft })
+    }
 
     // input time in seconds
     // display time in minutes, seconds and tenth/hundreds
@@ -113,10 +79,10 @@ const XY = () => {
                         <p className="timer-text">Time</p>
                         <DisplayTime time={timeLeft} />
                     </div>
-                    <div className="buttonPanel">
-                    <div>{isActive ? <ButtonPanel handleFastForward={handleFastForward} handlePauseResume={handlePauseResume} handleReset={handleReset} isPaused={isPaused} /> : StartButton}</div>
-                    </div>
                 </div>
+                <button onClick={ addTimerType }>
+                    Add to Workout
+                </button>
             </div>
         </Panel>
     );
