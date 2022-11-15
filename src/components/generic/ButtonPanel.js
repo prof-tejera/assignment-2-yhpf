@@ -20,7 +20,7 @@ const ButtonPanel = ({ handleFastForward, handleReset, handlePauseResume, isPaus
         <Button
             className="pause-resume" 
             onClick={handlePauseResume}
-            text={isPaused ? <i class="fa fa-play"></i> : <i class="fa fa-pause"></i>}
+            text={isPaused ? <i className="fa fa-play"></i> : <i className="fa fa-pause"></i>}
             title={isPaused ? "resume" : "pause"}
         />
     </div>

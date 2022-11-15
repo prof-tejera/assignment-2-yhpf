@@ -1,30 +1,28 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./ViewsStyle.css";
-
-import Stopwatch from "../components/timers/Stopwatch";
-import Countdown from "../components/timers/Countdown";
-import XY from "../components/timers/XY";
-import Tabata from "../components/timers/Tabata";
-
+import StopwatchAdd from "../components/timers/StopwatchAdd";
+import CountdownAdd from "../components/timers/CountdownAdd";
+import XYAdd from "../components/timers/XYAdd";
+import TabataAdd from "../components/timers/TabataAdd";
+import TimerList from "../components/TimerList";
 import { Context } from "../Context";
 
-// use global context to get added timer info from addview
-const item1 = "wo item 1";
-const item2 = "wo item 2";
-const item3 = "wo item 3";
-
 const AddView = () => {
-    const { timerList, setTimerList } = useContext(Context);
+    const { timerList, setTimerList, maxId, setMaxId } = useContext(Context);
     const addToList = (item) => {
+        item.id = maxId;
+        item.state = "not-running";
+        item.timeLeft = item.totalTime; // set the time left on the timer to be the same as the total time it should spend
         setTimerList([...timerList, item]);
+        setMaxId(maxId+1);
     }
 
     const timers = [
-        { title: "Stopwatch", C: <Stopwatch onAdd={addToList} /> },
-        { title: "Countdown", C: <Countdown onAdd={addToList} /> },
-        { title: "XY", C: <XY onAdd={addToList} /> },
-        { title: "Tabata", C: <Tabata onAdd={addToList} /> },
+        { title: "Stopwatch", C: <StopwatchAdd onAdd={addToList} /> },
+        { title: "Countdown", C: <CountdownAdd onAdd={addToList} /> },
+        { title: "XY", C: <XYAdd onAdd={addToList} /> },
+        { title: "Tabata", C: <TabataAdd onAdd={addToList} /> },
     ];
 
     // This should be a real list later, that can take n number of items
@@ -49,16 +47,7 @@ const AddView = () => {
                     </div>
                 ))}
             </div>
-            <div className="ItemsList">
-                <h2>List of Timers in Workout</h2>
-                {timerList.map((item, i) => (
-                    <div className="Item" key={i}>
-                        <div className="ItemTitle">
-                            {item.timerType} {item.timerRounds} {item.timerTime} {item.timerRest} <button>Remove</button>
-                        </div>
-                    </div>
-                ))}
-            </div>
+            <TimerList activeTimer={-1} showDelete={true} />
         </div>
         </>
     );

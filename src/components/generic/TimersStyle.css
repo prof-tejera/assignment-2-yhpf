@@ -152,3 +152,12 @@
     margin: 2px;
     cursor: pointer;
 }
+
+/* Border around timers in timer list */
+.ActiveItemsList .state-running {
+    border: 4px solid blue;
+}
+
+.ActiveItemsList .state-finished {
+    border: 4px solid gray;
+}
