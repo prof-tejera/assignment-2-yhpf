@@ -61,7 +61,7 @@ As you have noticed this repository is empty. To begin this assignment you must 
 ## URL to Application
 https://prof-tejera.github.io/assignment-2-yhpf
 
-*** Comments: ***
+**Comments:**
 - All external resources used are commented into the code.
 - I'm really sorry for the layout. The plan was to improve it from A1. Fair and square...I ran out of time.
 - The app is not responsive.
