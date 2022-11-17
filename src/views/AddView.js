@@ -29,11 +29,11 @@ const AddView = () => {
     return (
         <>
         <div className="ViewTitle">
-            <h1>Add new timer to WorkOut</h1>
+            <h1>Add new timers to WorkOut</h1>
         </div>
         <div className="SaveCancel">
-            <a href="/add"><button>Clear Workout</button></a>
-            <Link to="/"><button>Go to Workout</button></Link>
+            <a href="/add"><button className="ClearButton">Clear Workout</button></a>
+            <Link to="/"><button className="WorkoutButton">Go to Workout</button></Link>
         </div>
         <div className="WorkoutView">
             <div className="Timers">

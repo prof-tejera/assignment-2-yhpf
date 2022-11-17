@@ -30,7 +30,7 @@ const StopwatchAdd = ({onAdd}) => {
     return (
         <Panel>
             <div className="panel">
-                <button onClick={addTimerType}>Add to Workout</button>
+                <button onClick={addTimerType} className="addButton">Add to Workout</button>
             </div>
         </Panel>
     );

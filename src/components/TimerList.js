@@ -4,6 +4,7 @@ import StopwatchView from "./timers/StopwatchView";
 import XYView from "./timers/XYView";
 import TabataView from "./timers/TabataView";
 import { Context } from "../Context";
+import "../views/ViewsStyle.css";
 
 // TimerList is the list of timers
 const TimerList = ({activeTimer, onTimerCompleted, showDelete, isPaused}) => {
@@ -68,7 +69,7 @@ const TimerList = ({activeTimer, onTimerCompleted, showDelete, isPaused}) => {
                         : item.timerType === "Tabata" ? 
                             <TabataView item={item} /> 
                         : "" }
-                    { showDelete ? <button  onClick={() => handleRemove(item.id)}>Remove</button> : <></> }
+                    { showDelete ? <button  onClick={() => handleRemove(item.id)} className="removeButton">Remove</button> : <></> }
                 </div>
             ))}
         </div>

@@ -48,3 +48,80 @@ h3 {
     color: black;
     height: 100vh;
 }
+
+/* BUTTONS */
+
+/* Remove workout timer */
+.removeButton {
+    background-color: grey;
+    border: solid 1px grey;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.removeButton:hover {
+    background-color: lightpink;
+    border: solid 1px red;  
+    color: red;
+    cursor: pointer;
+}
+
+.removeButton:active {
+    background-color: lightpink;
+    border: solid 2px red;  
+    cursor: pointer;
+} 
+
+/* Clear */
+.ClearButton {
+    background-color: red;
+    border: solid 1px red;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+
+.ClearButton:hover {
+    background-color: lightgray;
+    border: solid 1px red;  
+    color: red;
+    cursor: pointer;
+}
+
+.ClearButton:active {
+    background-color: lightgray;
+    border: solid 2px red;  
+    cursor: pointer;
+} 
+
+/* Go to workout*/
+.WorkoutButton {
+    background-color: green;
+    border: solid 1px green;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+
+.WorkoutButton:hover {
+    background-color: lightgray;
+    border: solid 1px green;  
+    color: green;
+    cursor: pointer;
+}
+
+.WorkoutButton:active {
+    background-color: lightgray;
+    border: solid 2px green;  
+    cursor: pointer;
+} 

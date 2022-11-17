@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import styled from "styled-components";
-
+import "./index.css";
 import DocumentationView from "./views/DocumentationView";
 import WorkoutView from "./views/WorkoutView";
 import AddView from "./views/AddView";
@@ -18,13 +18,13 @@ const Nav = () => {
     <nav>
       <ul>
         <li>
-          <Link to="/">Workout</Link>
+          <Link to="/" className="menuLinks">Workout</Link>
         </li>
         <li>
-          <Link to="/add">Creat new workout</Link>
+          <Link to="/add" className="menuLinks">Creat new workout</Link>
         </li>
         <li>
-          <Link to="/docs">Documentation</Link>
+          <Link to="/docs" className="menuLinks">Documentation</Link>
         </li>
       </ul>
     </nav>

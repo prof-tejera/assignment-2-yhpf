@@ -64,7 +64,7 @@ const XYAdd = ({onAdd}) => {
                         placeholder="input in seconds"
                     />
                 </div>
-                <button onClick={addTimerType}>Add to Workout</button> 
+                <button onClick={addTimerType} className="addButton">Add to Workout</button> 
             </div>
         </Panel>
     );

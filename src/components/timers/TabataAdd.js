@@ -79,7 +79,7 @@ const TabataAdd = ({onAdd, startTime=0, startRounds=0, startRest=0, showAddButto
                         placeholder="input in seconds"
                     />
                 </div>
-                <button onClick={addTimerType}>Add to Workout</button>
+                <button onClick={addTimerType} className="addButton">Add to Workout</button>
             </div>
         </Panel>
     );
