@@ -94,7 +94,7 @@ h3 {
     cursor: pointer;
 } 
 
-/* Clear */
+/* Clear Button not added at the moment
 .ClearButton {
     background-color: red;
     border: solid 2px red;
@@ -118,6 +118,8 @@ h3 {
     border: solid 3px red;  
     cursor: pointer;
 } 
+
+*/
 
 /* Go to workout*/
 .WorkoutButton {

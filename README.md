@@ -63,5 +63,6 @@ https://prof-tejera.github.io/assignment-2-yhpf
 
 **Comments:**
 - All external resources used are commented into the code.
+- I intend to add a clear workout button in the future, so that the user do not have to remove timers one by one.
 - I'm really sorry for the layout. The plan was to improve it from A1. Fair and square...I ran out of time.
 - The app is not responsive.

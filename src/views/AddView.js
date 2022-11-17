@@ -25,13 +25,14 @@ const AddView = () => {
         { title: "Tabata", C: <TabataAdd onAdd={addToList} /> },
     ];
 
+    // i need to fix the clear button. for now remove timer by timer
+    // <Link to="/add"><button className="ClearButton">Clear Workout</button></Link>
     return (
         <>
         <div className="ViewTitle">
             <h1>Create new Workout</h1>
         </div>
         <div className="SaveCancel">
-            <a href="/add"><button className="ClearButton">Clear Workout</button></a>
             <Link to="/"><button className="WorkoutButton">Go to Workout</button></Link>
         </div>
         <div className="WorkoutView">
