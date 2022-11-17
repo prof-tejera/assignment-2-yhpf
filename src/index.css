@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0; 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -23,7 +23,7 @@ th {
 ul {
   display: flex;
   list-style: none;
-  background-color: gray;
+  background-image: linear-gradient(to right, rgba(128,128,128,1), rgba(128,128,128,0));
 }
 
 li {
@@ -32,7 +32,6 @@ li {
 
 .menuLinks {
     color: white;
-    background-color: gray;
     font-size: 14px;
     font-weight: bold;
     padding: 5px;
@@ -42,4 +41,11 @@ li {
 .menuLinks:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #000000;
+  color: white;
 }

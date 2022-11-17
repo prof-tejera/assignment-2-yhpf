@@ -7,8 +7,9 @@ import WorkoutView from "./views/WorkoutView";
 import AddView from "./views/AddView";
 import { ContextProvider } from './Context';
 
+// note to oneself: this is where the bg color is changed, not in index.css
 const Container = styled.div`
-  background: #f0f6fb;
+  background: #000000;
   height: 100vh;
   overflow: auto;
 `;

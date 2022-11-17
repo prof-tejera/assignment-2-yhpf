@@ -86,7 +86,7 @@ const WorkoutView = () => {
     </div>
     <div className="WorkoutView">
       <div className="WorkoutTimerDisplay">
-        <h2>Workout Timer</h2>
+        <h2>Total Workout Time</h2>
         <WorkoutButtons onClickRun={ onStart } onClickPause={ onPauseResume } onFastForward={ onFastForward } onReset={ onReset } />
       </div>
       <TimerList activeTimer={activeTimer} onTimerCompleted={ nextTimer } showDelete={activeTimer<0} isPaused={isPaused} />

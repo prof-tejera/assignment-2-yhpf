@@ -25,11 +25,10 @@ const AddView = () => {
         { title: "Tabata", C: <TabataAdd onAdd={addToList} /> },
     ];
 
-    // This should be a real list later, that can take n number of items
     return (
         <>
         <div className="ViewTitle">
-            <h1>Add new timers to WorkOut</h1>
+            <h1>Create new Workout</h1>
         </div>
         <div className="SaveCancel">
             <a href="/add"><button className="ClearButton">Clear Workout</button></a>

@@ -10,7 +10,6 @@ const TabataView = ({item}) => {
     return (
         <Panel>
             <div className="panel">
-                <br />
                 <div className="timerArea">
                     <div className="roundsDisplay">
                         <p className="timer-text">Rounds</p>

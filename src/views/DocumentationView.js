@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
 import DocumentComponent from "../components/documentation/DocumentComponent";
-
 import Loading from "../components/generic/Loading";
 import Button from "../components/generic/ButtonPanel";
 import ButtonPanel from "../components/generic/Button";
@@ -19,6 +17,7 @@ const Container = styled.div`
 
 const Title = styled.div`
   font-size: 2rem;
+  color: #FFFFFF;
 `;
 
 /**

@@ -26,7 +26,6 @@ const Countdown = ({onAdd}) => {
     return (
         <Panel>
             <div className="panel">
-                
                 <div>
                     <p className="input-text">Time in seconds:</p>
                 <Input 

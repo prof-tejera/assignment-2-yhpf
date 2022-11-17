@@ -43,6 +43,9 @@ As you have noticed this repository is empty. To begin this assignment you must 
 - All four timers must be functional: stopwatch, countdown, tabata, and XY.
 - Routing must be configured to support the home route (`/`) and add route (`/add`)
 
+## URL to Application
+https://prof-tejera.github.io/assignment-2-yhpf
+
 ## Grading Rubric
 - A workout can be configured with any combination of timers
 - Final workout application should be bug free

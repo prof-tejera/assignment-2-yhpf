@@ -56,7 +56,7 @@ const TimerList = ({activeTimer, onTimerCompleted, showDelete, isPaused}) => {
 
     return (
         <div className="ItemsList ActiveItemsList">
-            <h2>List of Timers in Workout</h2>
+            <h2 className="timerListTitle">List of Timers in Workout</h2>
             {timerList.map((item, i) => (
                 <div key={item.id} className={"Item state-"+item.state}>
                     <div className="ItemTitle">{item.timerType}</div>

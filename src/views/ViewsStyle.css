@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: #FFFFFF; /* white */
 }
 
 .SaveCancel {
@@ -13,12 +13,26 @@
     justify-content: center;
 }
 
-.Timer, .Item {
+.Timer {
     border: 1px solid gray;
     padding: 20px;
     margin: 10px;
     font-size: 1.5rem;
     width: 50%;
+}
+
+.Item {
+    border: 1px solid #000000;
+    padding: 20px;
+    margin: 10px;
+    font-size: 1.5rem;
+    width: 50%;
+    min-width: 200px;
+}
+
+.timerListTitle {
+    margin-left: 10px;
+    padding-left: 20px;
 }
 
 h3 {
@@ -36,12 +50,19 @@ h3 {
 .Timers, .WorkoutTimerDisplay {
     width: 50%;
     height: 100vh;
-    color: black;
+    color: #FFFFFF; /* white */
+}
+
+.ItemTitle {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 2px;
+    text-align: center;
 }
 
 .ItemsList {
     width: 50%;
-    color: black;
+    color: #FFFFFF; /* white */
     height: 100vh;
 }
 
@@ -55,8 +76,9 @@ h3 {
     color: white;
     font-size: 14px;
     font-weight: bold;
-    padding: 5px;
-    margin-top: 15px;
+    padding: 5px 10px; /* top/bottom left/right */
+    margin: 15px auto 0px auto; /* top right bottom left */
+    display:block;
 }
 
 .removeButton:hover {
@@ -75,49 +97,49 @@ h3 {
 /* Clear */
 .ClearButton {
     background-color: red;
-    border: solid 1px red;
+    border: solid 2px red;
     border-radius: 5px;
     color: white;
     font-size: 14px;
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
 }
 
 .ClearButton:hover {
     background-color: lightgray;
-    border: solid 1px red;  
+    border: solid 2px red;  
     color: red;
     cursor: pointer;
 }
 
 .ClearButton:active {
     background-color: lightgray;
-    border: solid 2px red;  
+    border: solid 3px red;  
     cursor: pointer;
 } 
 
 /* Go to workout*/
 .WorkoutButton {
     background-color: green;
-    border: solid 1px green;
+    border: solid 2px green;
     border-radius: 5px;
     color: white;
     font-size: 14px;
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
 }
 
 .WorkoutButton:hover {
     background-color: lightgray;
-    border: solid 1px green;  
+    border: solid 2px green;  
     color: green;
     cursor: pointer;
 }
 
 .WorkoutButton:active {
     background-color: lightgray;
-    border: solid 2px green;  
+    border: solid 3px green;  
     cursor: pointer;
 } 

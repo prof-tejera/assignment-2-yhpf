@@ -54,10 +54,10 @@ const WorkoutButtons = ({onClickRun, onClickPause, onFastForward, onReset}) => {
     return (
         <Panel>
             <div className="panel">
-                <div className="timerArea">
+                <div className="timerArea totalTimerArea">
                     <div className="roundsDisplay">
-                        <h3>Total workout time</h3>
                         <DisplayTime time={totalLength} />
+                        <br />
                         <div className="buttonPanel">
                             {timerList.length > 0 ? 
                             <>
@@ -66,7 +66,7 @@ const WorkoutButtons = ({onClickRun, onClickPause, onFastForward, onReset}) => {
                                 : 
                                 StartButton}
                             </>
-                                : "" }
+                                : "no timers added" }
                         </div>
                     </div>
                 </div>

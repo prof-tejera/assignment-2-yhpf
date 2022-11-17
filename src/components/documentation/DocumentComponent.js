@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  border: 1px solid #121212;
+  border: 1px solid #FFFFFF;
   margin: 20px 0px;
 `;
 
@@ -11,6 +11,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   width: 1000px;
+  color: #FFFFFF;
 `;
 
 const Title = styled.div`
@@ -18,6 +19,7 @@ const Title = styled.div`
   justify-content: center;
   padding-top: 20px;
   font-size: 1.3rem;
+  color: #FFFFFF;
 `;
 
 const RenderComponent = styled.div`

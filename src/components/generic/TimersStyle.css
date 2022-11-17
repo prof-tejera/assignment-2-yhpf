@@ -1,11 +1,17 @@
-.panel {
-    width: 20rem;
-}
-
 .timerArea {
-    border: solid black 1px;
+    border: solid #FFFFFF 1px;
     background-color: black;
     color: white;
+}
+
+.totalTimerArea {
+    padding: 60px 60px; /* top/bottom right/left */ 
+    border-color: #000000;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 15px #00FF00; /* https://unused-css.com/blog/css-outer-glow/ */
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
 }
 
 .input-text {
@@ -41,7 +47,7 @@
 }
 
 .buttonPanel {
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 .timerDisplay {
@@ -161,8 +167,9 @@
     color: white;
     font-size: 14px;
     font-weight: bold;
-    padding: 5px;
+    padding: 5px 10px; /* top/bottom left/right */
     margin-top: 15px;
+    float:right
 }
 
 .addButton:hover {
